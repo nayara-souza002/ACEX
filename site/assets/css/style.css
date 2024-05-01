@@ -208,3 +208,56 @@ form {
 input[type="text"], select{
 	width: 100%;
 }
+
+/* listagem_industia.html */
+
+.listagem_industria {
+	margin-top:20px;
+	margin-left: 20px;
+}
+
+.listagem_industria_lista {
+	max-width: 300px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 20px 0px;
+	background-color: #f9f9f9;
+}
+
+/* chat.html */
+
+.tela_chat {
+	max-width: 450px;
+	margin: 50px auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 20px 0px;
+	background-color: #f9f9f9;
+}
+
+/* configuracoes.html */
+
+.config {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 20px 0px;
+	background-color: #f9f9f9;
+}
+
+.config p {
+	display: inline-block;
+}
+
+/* cadastro_material.html */
+
+.cadastro_material {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 20px 0px;
+	background-color: #f9f9f9;
+}
