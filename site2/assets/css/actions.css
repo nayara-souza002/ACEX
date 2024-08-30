@@ -1,0 +1,103 @@
+#container_action {
+    display: flex;
+    position: absolute;
+    width: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-background-2);
+}
+
+#form_header {
+    margin: 10px 0px 40px 0px;
+}
+
+#input_group_action {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-box-action label {
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+
+.input-field-action {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid var(--color-green-50);
+}
+
+.input-field-action input {
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.input-field-action input:focus {
+    outline: none;
+}
+
+.input-field-action select {
+    color: var(--color-dark-50);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.input-field-action select:focus {
+    outline: 0;
+}
+
+.input-field-action textarea {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    width: 500px;
+    padding: 0px 5px;
+}
+
+.input-field-action textarea:focus {
+    outline: 0;
+}
+
+#button {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+#button button {
+    width: 50%;
+    border: none;
+    background: var(--color-green-200);
+    color: var(--color-light-50);
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.db {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

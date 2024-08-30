@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tela Excluir</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="principal.html"><i class="fa-solid fa-computer" id="nav_logo"> IP</i></a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="principal.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Tela_Consultar.html">Consultar Itens</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Tela_Incluir.html">Inserir Itens</a>
+                </li>
+            </ul>
+
+            <div class="right_header">
+                <i class="fa-solid fa-search" id="nav_search"></i>
+                <a href="profile.html"><img id="profile_p" src="assets/img/undraw_profile_pic_re_iwgo.svg" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="container_action">
+        <form action="#" method="POST">
+            <h3 id="form_header">Tela de Exclusão de Itens Cadastrados:</h3>
+
+            <div id="input_group_action">
+                <div class="input-box-action">
+                    <label for="idExcluirIp">Digite o IP do Aparelho que deseja Excluir:
+                        <div class="input-field-action">
+                            <input type="text" name="nameExcluirIp" id="idExcluirIp" placeholder="00.00.00.00/0">
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="button">
+                <button type="submit" id="idExcluirExcluir">Excluir</button>
+                <button type="reset" id="reset_button">Limpar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
