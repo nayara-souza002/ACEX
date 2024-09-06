@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "AcexxII.API.Controllers.UserPacienteController",
+    "Method": "CreatePaciente",
+    "RelativePath": "UserPaciente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paciente",
+        "Type": "AcexxII.API.Models.UserPaciente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
