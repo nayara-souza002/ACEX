@@ -193,6 +193,7 @@ main {
   }
 
   main {
+    width: 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
