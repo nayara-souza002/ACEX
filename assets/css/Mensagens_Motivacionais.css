@@ -108,6 +108,7 @@ main {
 .awareness-container {
   width: 50%; /* Ocupa 100% da largura do contêiner pai */
   height: 550px; /* Altura fixa para o contêiner */
+  margin-top: 100px;
   margin: 20px 10px; /* Margem ao redor do contêiner */
   padding: 20px;
   display: flex;
