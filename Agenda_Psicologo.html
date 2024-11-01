@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Psicólogo</title>
+    <link rel="stylesheet" href="../assets/css/Agenda_Psicologo.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="../assets/img/nav_left_feather.svg" alt="Logo MenteConecta">
+                <span>MENTECONECTA</span>
+            </div>
+
+            <div class="navbar-profile">
+                <a href="#"><img src="../assets/img/calendar.svg" alt="Agenda"></a>
+                <a href="./Capa_Paciente.html"><img src="../assets/img/chat.svg" alt="Chat"></a>
+                <a href="./Dados_Psicologo.html"><img src="../assets/img/nav_right_perfil.svg" alt="Perfil"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="schedule">
+        <div class="filter">
+            <select>
+                <option>DATA</option>
+            </select>
+            <button id="openModal" class="open-modal-btn">HORÁRIOS DISPONÍVEIS</button>
+        </div>
+
+        <div class="agenda">
+            <div class="day">DOMINGO X</div>
+            <div class="day">SEGUNDA-FEIRA X</div>
+            <div class="day">
+                TERÇA-FEIRA X
+                <a href="./Capa_Paciente.html"><div class="appointment">
+                    <img src="../assets/img/undraw_profile_pic_re_iwgo (3).svg" alt="Foto do Paciente">
+                    <span>Nome do Paciente</span>
+                </div></a>
+            </div>
+            <div class="day">QUARTA-FEIRA X</div>
+            <div class="day">QUINTA-FEIRA X</div>
+            <div class="day">SEXTA-FEIRA X</div>
+            <div class="day">SÁBADO X</div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <form>
+                <label for="date">Selecione a Data disponível:</label>
+                <select id="date">
+                    <option>DATA</option>
+                </select>
+
+                <label for="time">Selecione o Horário disponível:</label>
+                <select id="time">
+                    <option>HORA</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
