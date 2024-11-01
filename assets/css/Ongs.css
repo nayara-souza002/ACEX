@@ -143,8 +143,9 @@ body {
 
     /* Ajustes na lista de ONGs para dispositivos móveis */
     .ongs-container {
+        align-items: center;
+        justify-content: center;
         grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas menores */
         width: 100%;
-        padding: 0 20px;
     }
 }
