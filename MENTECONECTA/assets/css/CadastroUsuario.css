@@ -94,7 +94,11 @@ input:disabled {
     background-color: #e0e0e0; /* Escurecer o campo desabilitado */
 }
 
-button {
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     width: 100%;
     padding: 14px;
     border: none;
@@ -152,3 +156,4 @@ button:hover {
     background-color: #f8d7da; /* Fundo vermelho claro */
     color: #721c24; /* Texto vermelho escuro */
 }
+
