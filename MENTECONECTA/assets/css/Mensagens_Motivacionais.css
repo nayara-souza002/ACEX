@@ -1,0 +1,199 @@
+@import url("../css/style.css");
+
+body {
+  background-color: #d9e6e4; /* cor de fundo semelhante à da imagem */
+  overflow: hidden;
+}
+
+/* ==================== NAVBAR STYLES ==================== */
+
+/* Estilos para a barra de navegação (navbar) */
+.navbar {
+  display: flex; /* Exibe os itens em linha */
+  justify-content: space-between; /* Espaço igual entre os itens da navbar */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  background-color: var(--color-yellow-100); /* Cor de fundo amarela */
+  padding: 20px 50px; /* Espaçamento interno (20px em cima/baixo, 50px nas laterais) */
+  width: 100%; /* Preenche toda a largura da página */
+  position: relative; /* Permite posicionar o elemento relativamente ao seu local original */
+  top: 0; /* Fixa a navbar no topo da página */
+}
+
+/* Estilos para a logo da navbar */
+.navbar-logo {
+  display: flex; /* Exibe logo e texto em linha */
+  align-items: center; /* Centraliza verticalmente o logo e o texto */
+}
+
+.navbar-logo img {
+  height: 40px; /* Define a altura da imagem da logo */
+  margin-right: 10px; /* Espaçamento à direita da imagem */
+}
+
+.navbar-logo span {
+  font-size: 20px; /* Tamanho da fonte do texto ao lado da logo */
+  font-weight: bold; /* Texto em negrito */
+  color: black; /* Cor preta do texto */
+}
+
+/* Estilos para os links da navbar */
+.navbar-links {
+  display: flex; /* Exibe os links em linha */
+  justify-content: center; /* Centraliza os links */
+  gap: 50px; /* Espaçamento entre os links */
+}
+
+.navbar-links li {
+  display: inline-block; /* Exibe os itens de lista como blocos em linha */
+}
+
+/* Define o tamanho das imagens nos links da navbar */
+.navbar-links a img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-profile a img {
+  width: 40px;
+  height: 40px;
+}
+
+main {
+  display: flex;
+}
+
+/* ==================== MOTIVATIONAL SECTION STYLES ==================== */
+
+/* Seção da frase motivacional */
+.motivational-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9e6e4;
+  height: 90vh;
+}
+
+.motivational-container {
+  height: 70vh;
+  margin-left: 20px;
+  background-color: #fdf1ce; /* Fundo amarelo claro */
+  padding: 40px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.motivational-text {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #4a4a4a;
+  margin: 0;
+  position: relative;
+  z-index: 1; /* Para garantir que o texto fique acima da imagem */
+}
+
+.motivational-container img.motivational-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%; /* Ajuste conforme necessário */
+  opacity: 0.8; /* Ajuste de transparência para melhor integração */
+  z-index: 0; /* A imagem fica por trás do texto */
+}
+
+.awareness-container {
+  width: 50%; /* Ocupa 100% da largura do contêiner pai */
+  height: 550px; /* Altura fixa para o contêiner */
+  margin: 20px 10px; /* Margem ao redor do contêiner */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Permite a rolagem vertical */
+}
+
+.awareness-text {
+  background-color: var(--color-light-50);
+  margin-top: 10px;
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  flex-direction: column;
+  flex: 0 0 auto; /* Permite que os itens cresçam com base em seu conteúdo */
+}
+
+.awareness-text a {
+  text-decoration: none;
+  color: var(--color-dark-100);
+}
+
+.awareness-text strong {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo flexível à direita */
+  width: 100%; /* Ocupa a largura total */
+}
+
+/* Estilo da barra de rolagem para navegadores WebKit (Chrome, Safari) */
+.awareness-container::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+.awareness-container::-webkit-scrollbar-track {
+  background: transparent; /* Cor do fundo da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.awareness-container::-webkit-scrollbar-thumb {
+  background: transparent; /* Cor do "polegar" da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas do polegar */
+}
+
+.awareness-container::-webkit-scrollbar-thumb:hover {
+  background: transparent; /* Cor do polegar quando está sendo hover */
+}
+
+/* Estilo da barra de rolagem para navegadores Firefox */
+.awareness-container {
+  scrollbar-width: thin; /* Largura da barra de rolagem */
+  scrollbar-color: var(--color-dark-50) transparent; /* Cor do polegar e do fundo */
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+@media (max-width: 768px) {
+  /* Ajustes na Navbar para dispositivos móveis */
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .navbar-links {
+    gap: 30px;
+    margin-top: 10px;
+  }
+
+  .navbar-links a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-profile a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Ajustes no texto motivacional para dispositivos móveis */
+  .motivational-text {
+    font-size: 16px;
+  }
+
+  /* Ajuste do tamanho da imagem do girassol */
+  .motivational-container img.motivational-image {
+    width: 30%;
+  }
+}

@@ -1,0 +1,218 @@
+@import url('../css/style.css'); /* Importa o arquivo CSS de estilo global */
+
+/* Configura o comportamento suave de rolagem para a página */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-light-50); /* Define a cor de fundo da página */
+    overflow: hidden;
+}
+
+/* ==================== NAVBAR STYLES ==================== */
+
+/* Estilos para a barra de navegação (navbar) */
+.navbar {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaço igual entre os itens da navbar */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    background-color: var(--color-yellow-100); /* Cor de fundo amarela */
+    padding: 20px 50px; /* Espaçamento interno (20px em cima/baixo, 50px nas laterais) */
+    width: 100%; /* Preenche toda a largura da página */
+    position: relative; /* Permite posicionar o elemento relativamente ao seu local original */
+    top: 0; /* Fixa a navbar no topo da página */
+}
+
+/* Estilos para a logo da navbar */
+.navbar-logo {
+    display: flex; /* Exibe logo e texto em linha */
+    align-items: center; /* Centraliza verticalmente o logo e o texto */
+}
+
+.navbar-logo img {
+    height: 40px; /* Define a altura da imagem da logo */
+    margin-right: 10px; /* Espaçamento à direita da imagem */
+}
+
+.navbar-logo span {
+    font-size: 20px; /* Tamanho da fonte do texto ao lado da logo */
+    font-weight: bold; /* Texto em negrito */
+    color: black; /* Cor preta do texto */
+}
+
+/* Estilos para os links da navbar */
+.navbar-links {
+    display: flex; /* Exibe os links em linha */
+    justify-content: center; /* Centraliza os links */
+    gap: 50px; /* Espaçamento entre os links */
+}
+
+.navbar-links li {
+    display: inline-block; /* Exibe os itens de lista como blocos em linha */
+}
+
+/* Define o tamanho das imagens nos links da navbar */
+.navbar-links a img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-profile a img {
+    width: 40px;
+    height: 40px;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.filter select {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid var(--color-light-150);
+    border-radius: 8px;
+    background-color: var(--color-light-50);
+    width: 200px;
+    height: 40px;
+}
+
+.agenda {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0px;
+}
+
+.day {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: center;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-dark-900);
+}
+
+.appointment {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.appointment:hover {
+    scale: 1.02;
+}
+
+.appointment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: var(--color-yellow-100);
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #D9D9D9;
+    margin: 10% auto; /* Centraliza o modal verticalmente */
+    padding: 40px;
+    border-radius: 15px; /* Borda suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombras leves */
+    width: 35%;
+    max-width: 500px;
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+.close {
+    color: #333;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-right: -10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left; /* Alinhar à esquerda */
+}
+
+select {
+    display: flex;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-light-150);
+    border-radius: 8px;
+    align-self: flex-start;
+}
+
+.submit-btn {
+    background-color: var(--color-blue-100);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid var(--color-dark-50);
+    border-radius: 8px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.open-modal-btn {
+    padding: 10px;
+    background-color: var(--color-blue-50);
+    color: var(--color-dark-150);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid var(--color-light-150);
+    border-radius: 8px;
+    height: 40px;
+
+
+}
