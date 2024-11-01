@@ -193,7 +193,6 @@ main {
   }
 
   main {
-    width: 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -201,7 +200,18 @@ main {
   }
 
   .awareness-container {
+    width: 90%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  .motivational-container {
+    width: 90%;
+  }
+
+  .awareness-container {
     margin-top: -50px;
-    width: 100%;
+    width: 90%;
   }
 }
