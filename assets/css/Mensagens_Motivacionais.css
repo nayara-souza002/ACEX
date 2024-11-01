@@ -196,7 +196,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -10px;
+    margin: -10px;
+  }
+
+  .motivational-section {
+    margin: -20px;
+  }
+
+  .motivational-container {
+    width: 90%;
+    height: 60%;
   }
 
   .awareness-container {
