@@ -141,6 +141,10 @@ body {
         height: 30px;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     /* Ajustes na lista de ONGs para dispositivos móveis */
     .ongs-container {
         align-items: center;

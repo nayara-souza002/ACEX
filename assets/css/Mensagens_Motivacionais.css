@@ -188,11 +188,15 @@ main {
   }
 
   body {
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   main {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
   }
 
   .awareness-container {
