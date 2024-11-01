@@ -187,13 +187,16 @@ main {
     height: 30px;
   }
 
-  /* Ajustes no texto motivacional para dispositivos móveis */
-  .motivational-text {
-    font-size: 16px;
+  body {
+    overflow: scroll;
   }
 
-  /* Ajuste do tamanho da imagem do girassol */
-  .motivational-container img.motivational-image {
-    width: 30%;
+  main {
+    flex-direction: column;
+  }
+
+  .awareness-container {
+    margin-top: -50px;
+    width: 100%;
   }
 }

@@ -158,6 +158,10 @@ body {
         height: 30px;
     }
 
+    body {
+        overflow: scroll;
+    }
+
     /* Ajusta o layout para 1 coluna em telas pequenas */
     .psychologist-container {
         grid-template-columns: repeat(1, 1fr); /* Apenas 1 coluna em telas pequenas */
