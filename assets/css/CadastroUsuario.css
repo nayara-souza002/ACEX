@@ -120,7 +120,7 @@ button:hover {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        margin-top: 580px;
+        margin-top: 480px;
     }
 
     .radio-group {
